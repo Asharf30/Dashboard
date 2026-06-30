@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Open Sans", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  --font-size-14: 14px;
+
+  --color-main-bg: #fafbfb;
+  --color-main-dark-bg: #20232a;
+  --color-secondary-dark-bg: #33373e;
+  --color-light-gray: #f7f7f7;
+  --color-half-transparent: rgba(0, 0, 0, 0.5);
+
+  --color-primary: #03a9f499;
+  --color-secondary: #039499;
+
+  --border-width-1: 1px;
+  --border-color-color: rgba(0, 0, 0, 0.1);
+
+  --width-400: 400px;
+  --width-760: 760px;
+  --width-780: 780px;
+  --width-800: 800px;
+  --width-1000: 1000px;
+  --width-1200: 1200px;
+  --width-1400: 1400px;
+
+  --height-80: 80px;
+
+  --min-height-590: 590px;
+
+  --background-image-hero-pattern: url("./data/welcome-bg.svg");
+}
+/* bg-[var(--gradient-primary)] */
+@theme {
+  /* ===== Gradient 1 ===== */
+  --gradient-primary: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  --color-primary2: #0093e9;
+
+  /* ===== Gradient 2 ===== */
+  --gradient-secondary: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+  --color-secondary2: #9708cc;
+}
+
+.gradient-text-primary {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-secondary {
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
