@@ -5,7 +5,7 @@ Includes animations with Framer Motion and UI/charts components from Syncfusion.
 
 ## Live Demo
 
-- https://dashboard-ashraf.netlify.app
+- https://dashboard-ashraf.vercel.app/
 
 ## Quick Features
 
